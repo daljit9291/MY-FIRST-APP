@@ -1,7 +1,14 @@
 import { Component } from '@angular/core';
 @Component({
     selector:'app-server',
-    templateUrl: './server.component.html'
+    templateUrl: './server.component.html',
+    styles:[`
+        .online {
+            color:white;
+            border: 2px solid black;
+            font-size:18px;
+        }
+    `]
 })
 export class ServerComponent{
     serverID : number = 10;
